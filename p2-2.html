@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Care</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Check your data</h3>
+    <h1>Health Care</h1>
+    
+    <div class="grid">
+        <div class="grid-item" onclick="openPopup('Brain', 'Brain.jpg')">
+            <img src="Brain.jpg" alt="Brain">
+        </div>
+        <div class="grid-item" onclick="openPopup('Appo', 'appo.png')">
+            <img src="appo.png" alt="Appo">
+        </div>
+        <div class="grid-item" onclick="openPopup('Mydata', 'mydata.png')">
+            <img src="mydata.png" alt="Mydata">
+        </div>
+        <div class="grid-item" onclick="openPopup('Treat', 'treat.jpg')">
+            <img src="treat.jpg" alt="Treat">
+        </div>
+    </div>
+    
+    <!-- Popup Window -->
+    <div id="popup" class="popup">
+        <h2 id="popup-title"></h2>
+        <img id="popup-image" src="" alt="Popup Image" style="width:100%; height:auto;">
+        <p id="popup-content">Content goes here...</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
